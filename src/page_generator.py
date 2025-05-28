@@ -14,6 +14,7 @@ def generate_page(from_path, template_path, dest_path, basepath):
     print(f"Generating page from {from_path} to {dest_path} using {template_path}")
     from_file = open(from_path, "r")
     markdown_content = from_file.read()
+    print("MARKDOWN DEBUG:", markdown_content[:200])
     from_file.close()
 
     template_file = open(template_path, "r")
